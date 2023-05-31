@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search__data {
+  display: flex;
+  background-image: url(./images/background-search.svg);
+  background-repeat: no-repeat;
+  background-position-x: 89px;
+  gap: 30px;
+  align-items: center;
+  padding: 37px 18px;
+}
+
+.print__data {
+  display: flex;
+  background-image: url(./images/background-print.svg);
+  background-repeat: no-repeat;
+  background-position-x: 89px;
+  gap: 30px;
+  align-items: center;
+  padding: 37px 18px;
+}
+
+.hours__data {
+  display: flex;
+  background-image: url(./images/background-hours.svg);
+  background-repeat: no-repeat;
+  background-position-x: 89px;
+  gap: 30px;
+  align-items: center;
+  padding: 37px 18px;
+}
+
+.security__data {
+  display: flex;
+  background-image: url(./images/background-security.svg);
+  background-repeat: no-repeat;
+  background-position-x: 89px;
+  gap: 30px;
+  align-items: center;
+  padding: 37px 18px;
+  
+}
+
+.search__img {
+    height: 211px;
+    width: 232px;
+    margin-top: 55px;
+}
+
+.print__img {
+  width: 245px;
+  height: 181px;
+  margin-top: 30px;
+}
+
+.hours__img {
+  width: 241px;
+  height: 185px;
+}
+
+
+.search__data_info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.search__data_info h1 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 50px;
+  color: #212353;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.search__data_info p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #4b5d68;
+  width: 220px;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 160px;
+}
+
+.search__data_info span {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.005em;
+  color: #212353;
+ 
+}
+
+.search__data_info a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+}
+
+
+.wrap-sides{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 38px ;
+  max-width: 1146px;
+  width: 100%;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+
+
+@media screen and (max-width: 550px) {
+  .search__img, .hours__img, .print__img, .security__img {
+    transform:scale(0.7, 0.7); 
+  }
+  .features__container p {
+    width: 350px;
+    text-align: center;
+  }
+  .wrap-sides {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .features__container {
+    text-align: center;
+  }
+}
+
